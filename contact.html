@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en"
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width", initial-scale="1.0">
+    <title>Barrel Barrons</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <!-- Latest compiled and minified CSS -->
+     <link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+     <!-- Optional theme -->
+     <link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="style.css">
+
+
+    <style>
+        #overlay {
+            display: none;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            background: #999;
+            width: 100%;
+            height: 100%;
+            opacity: 0.8;
+            z-index: 100;
+        }
+    
+        #popup {
+            display: none;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            background: #fff;
+            width: 500px;
+            height: 500px;
+            margin-left: -250px; /*Half the value of width to center div*/
+            margin-top: -250px; /*Half the value of height to center div*/
+            z-index: 200;
+
+        }
+        #popupclose {
+        float: right;
+        padding: 10px;
+        cursor: pointer;
+    }
+
+    .popupcontent {
+		padding: 10px;
+	}
+
+	#button {
+		cursor: pointer;
+	}
+
+      </style>
+
+</head>
+<body>
+
+    <div id="maincontent">
+        <h1><h2>
+    </div>
+    <div id="overlay"></div>
+    <div id="popup">
+        <div class="popupcontent">
+            <h1>Some Popup Content</h1>
+        </div>
+    </div>
+
+
+    <section id="header">
+        <a href="#"><img src="img/BBL LOGO GOLD.png" class="logo" alt="" width="15%"></a>
+
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#"><i class="fa fa-user" aria-hidden="true"></i> Profile</a></li>
+                <li><a href="#"><i class="fa fa-cart-plus" aria-hidden="true"></i></i></a></li>
+                <li><a href="#">Auction</a></li>
+                
+
+                <nav class="navbar navbar-default"></nav>
+                <div class="container-fluid">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                    
+                    </div>
+    
+                
+                                <ul class="nav navbar-nav navbar-right">
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Shop</a></li>
+                                    <li><a href="#">About Us</a></li>
+                                    <li><a class="active"href="#">Contact</a></li>
+                                    <li><a href="#">Distributors, Wholesalers and Event Planners</a></li>
+                                    <li><a href="#">Experiences</a></li>
+                                    <li><a href="#">Events</a></li>
+                                    <li><a href="#">Tours</a></li>
+                                    <li><a href="#">Press</a></li>
+                                    <li><a href="#">BBL original</a></li>
+                                    <li><a href="#">Brands</a></li>
+                                    <li><a href="#">FAQ</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="#">Separated link</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div><!-- /.navbar-collapse -->
+                </div><!-- /.container-fluid -->
+            </nav>
+            <!-- Latest compiled and minified JavaScript -->
+            </ul>
+   
+        </div>
+        <div id="mobile">
+            <a href="cart.html"><i class="fa fa-shopping-cart-cart" aria-hidden="true"></i></a>
+            <i id="bar" class="fas fa-outdent"></i>
+        </div>
+    </section>
+
+    <section id="page-header" class="about-header">
+        <h2>#Let's Talk</h2>
+        <p>LEAVE US A MESSAGE, We love to hear from you</p>
+    </section>
+    
+    <section id="contact-details" class="section-p1">
+        <div class="details">
+            <span>GET IN TOUCH</span>
+            <h2>Visit one of our agency locations or contact us today</h2>
+            <h3>Head Office</h3>
+            <div>
+                <li>
+                    <i class="fa fa-map-marker" aria-hidden="true"></i>
+                    <p>56 Glassford Street Glasgow G1 1UL New York</p>
+                </li>
+                <li>
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                    <p>contact@example.com</p>
+                </li>
+                <li>
+                    <i class="fa fa-phone" aria-hidden="true"></i>
+                    <p>+254 1234567890</p>
+                </li>
+                <li>
+                    <i class="fa fa-clock-o" aria-hidden="true"></i>
+                    <p>Mon-Fri, 8am to 5pm</p>
+                </li>
+            </div>
+        </div>
+
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.79340355439!2d36.75921447550468!3d-1.2987174356409297!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f1a6af785f0f3%3A0xc87e47e63ed244ed!2sThe%20Junction%20Mall!5e0!3m2!1sen!2ske!4v1683553329632!5m2!1sen!2ske" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        
+        </div>
+    </section>
+
+    <section id="form-details">
+        <form action="">
+            <span>LEAVE A MESSAGE</span>
+            <h2>We love to hear from you</h2>
+            <input type="text" placeholder="Your Name">
+            <input type="text" placeholder="E-mail">
+            <input type="text" placeholder="Subject">
+            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+            <button class="normal">Submit</button>
+        </form>
+
+        <div class="people">
+            <div>
+                <img src="img/guy face 1.jpg" alt="">
+                <p><span>John Doe</span> Senior Marketing Manager <br> +254 2345678901 <br>Email: contact@example.com</p>
+            </div>
+            <div>
+                <img src="img/guy face 2.jpg" alt="">
+                <p><span>William Smith</span> Senior Marketing Manager <br> +254 2345678901 <br>Email: contact@example.com</p>
+            </div>
+            <div>
+                <img src="img/woman face.jpg" alt="">
+                <p><span>Emma Stone</span> Senior Marketing Manager <br> +254 2345678901 <br>Email: contact@example.com</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="newsletter" class="section-p1 section-m1">
+        <div class="newstext">
+            <h4>Sign up for Newsletter</h4>
+            <p>Enter your email address below to receive alerts on the latest updates from Barrel Barrons.Auction</p>
+        </div>
+        <div class="form">
+            <input type="text" placeholder="Your email address">
+            <button class="normal">Sign Up</button>
+        </div>
+    </section>
+
+
+
+<div class="wrapper">
+    <h1></h1>
+    <p><p>
+</div>
+
+ 
+<div class="cookie-container">
+    <p>
+        We use cookies in this website to give you the best experience on our site and show you relevant ads.To find out more,read our <a href="#">Privacy Policy</a> and <a href="#">Cookie Policy</a>
+    </p>
+
+    <button class="cookie-btn">
+        Okay
+    </button>
+</div>
+
+
+    <footer class="section-p1">
+        <div class="col">
+            <img class="logo" src="" alt="">
+            <div class="follow">
+                <h4>Follow Us</h4>
+                <div class="icon">
+                    <i class="fa fa-facebook-official" aria-hidden="true"></i>
+                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                    <i class="fa fa-youtube" aria-hidden="true"></i>
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <h4>About</h4>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Cookie Policy</a>
+            <a href="#">Terms & Conditions</a>
+        </div>
+
+        <div class="copyright">
+            <p> ©Barrel Barrons Limited 2023</p>
+        </div>
+    </footer>
+
+    
+
+    <script src="script.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        <script type="text/javascript">
+            // Initialize Variables
+            var closePopup = document.getElementById("popupclose");
+            var overlay = document.getElementById("overlay");
+            var popup = document.getElementById("popup");
+         
+            // Close Popup Event
+            closePopup.onclick = function() {
+                overlay.style.display = 'none';
+                popup.style.display = 'none';
+            };
+            // Show Overlay and Popup
+	button.onclick = function() {
+	  overlay.style.display = 'block';
+	  popup.style.display = 'block';
+	}
+        </script>
+
+</body>
+</html>

@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en"
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width", initial-scale="1.0">
+    <title>Barrel Barrons</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <!-- Latest compiled and minified CSS -->
+     <link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+     <!-- Optional theme -->
+     <link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="style.css">
+
+
+    <style>
+        #overlay {
+            display: none;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            background: #999;
+            width: 100%;
+            height: 100%;
+            opacity: 0.8;
+            z-index: 100;
+        }
+    
+        #popup {
+            display: none;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            background: #fff;
+            width: 500px;
+            height: 500px;
+            margin-left: -250px; /*Half the value of width to center div*/
+            margin-top: -250px; /*Half the value of height to center div*/
+            z-index: 200;
+
+        }
+        #popupclose {
+        float: right;
+        padding: 10px;
+        cursor: pointer;
+    }
+
+    .popupcontent {
+		padding: 10px;
+	}
+
+	#button {
+		cursor: pointer;
+	}
+
+      </style>
+
+</head>
+<body>
+
+    <div id="maincontent">
+        <h1><h2>
+    </div>
+    <div id="overlay"></div>
+    <div id="popup">
+        <div class="popupcontent">
+            <h1>Some Popup Content</h1>
+        </div>
+    </div>
+
+
+    <section id="header">
+        <a href="#"><img src="img/BBL LOGO GOLD.png" class="logo" alt="" width="15%"></a>
+
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#"><i class="fa fa-user"  aria-hidden="true"></i> Profile</a></li>
+                <li><a class="active" href="#"><i class="fa fa-cart-plus" aria-hidden="true"></i></i></a></li>
+                <li><a href="#">Auction</a></li>
+                
+
+                <nav class="navbar navbar-default"></nav>
+                <div class="container-fluid">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                    
+                    </div>
+    
+                
+                                <ul class="nav navbar-nav navbar-right">
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Shop</a></li>
+                                    <li><a href="#">About Us</a></li>
+                                    <li><a href="#">Contact</a></li>
+                                    <li><a href="#">Distributors, Wholesalers and Event Planners</a></li>
+                                    <li><a href="#">Experiences</a></li>
+                                    <li><a href="#">Events</a></li>
+                                    <li><a href="#">Tours</a></li>
+                                    <li><a href="#">Press</a></li>
+                                    <li><a href="#">BBL original</a></li>
+                                    <li><a href="#">Brands</a></li>
+                                    <li><a href="#">FAQ</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="#">Separated link</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div><!-- /.navbar-collapse -->
+                </div><!-- /.container-fluid -->
+            </nav>
+            <!-- Latest compiled and minified JavaScript -->
+            </ul>
+        </div>
+        <div id="mobile">
+            <a href="cart.html"><i class="fa fa-shopping-cart-cart" aria-hidden="true"></i></a>
+            <i id="bar" class="fas fa-outdent"></i>
+        </div>
+    </section>
+
+
+    <section id="cart" class="section-p1">
+    <table width="100%">
+        <thead>
+            <tr>
+                <td>Remove</td>
+                <td>Image</td>
+                <td>Product</td>
+                <td>Price</td>
+                <td>Quantity</td>
+                <td>Subtotal</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><a href="#"><i class="fa fa-times-circle-o" aria-hidden="true"></i></a></td>
+                <td><img src="img/DHR_Front_Silo_Bonded_Med.png" alt=""></td>
+                <td>Straight Rye Whisky</td>
+                <td>Ksh 1500</td>
+                <td><input type="number" value="1"></td>
+                <td>Ksh 1500</td>
+            </tr>
+            <tr>
+                <td><a href="#"><i class="fa fa-times-circle-o" aria-hidden="true"></i></a></td>
+                <td><img src="img/STUMBISON.png" alt=""></td>
+                <td>Straight Rye Whisky</td>
+                <td>Ksh 1500</td>
+                <td><input type="number" value="1"></td>
+                <td>Ksh 1500</td>
+            </tr>
+            <tr>
+                <td><a href="#"><i class="fa fa-times-circle-o" aria-hidden="true"></i></a></td>
+                <td><img src="img/GloriaElegance-1-179x420.png" alt=""></td>
+                <td>Straight Rye Whisky</td>
+                <td>Ksh 1500</td>
+                <td><input type="number" value="1"></td>
+                <td>Ksh 1500</td>
+            </tr>
+            <tr>
+                <td><a href="#"><i class="fa fa-times-circle-o" aria-hidden="true"></i></a></td>
+                <td><img src="img/NINEs-citrus-Custom-128x418.png" alt=""></td>
+                <td>Straight Rye Whisky</td>
+                <td>Ksh 1500</td>
+                <td><input type="number" value="1"></td>
+                <td>Ksh 1500</td>
+            </tr>
+        </tbody>
+    </table>
+    </section>
+
+    <section id="cart-add" class="section-p1">
+        <div id="coupon">
+            <h3>Apply Coupon</h3>
+            <div>
+                <input type="text" placeholder="Enter Your Coupon">
+                <button class="normal">Apply</button>
+            </div>
+        </div>
+
+        <div id="subtotal">
+            <h3>Cart Totals</h3>
+            <table>
+                <tr>
+                    <td>Cart Subtotal</td>
+                    <td>Ksh 6000</td>
+                </tr>
+                <tr>
+                    <td>Shipping</td>
+                    <td>Free</td>
+                </tr>
+                <tr>
+                    <td><strong>Total</strong></td>
+                    <td><strong>Ksh 6000</strong></td>
+                </tr>
+            </table>
+            <button class="normal">Proceed to Checkout</button>
+        </div>
+    </section>
+
+
+
+<div class="wrapper">
+    <h1></h1>
+    <p><p>
+</div>
+
+ 
+<div class="cookie-container">
+    <p>
+        We use cookies in this website to give you the best experience on our site and show you relevant ads.To find out more,read our <a href="#">Privacy Policy</a> and <a href="#">Cookie Policy</a>
+    </p>
+
+    <button class="cookie-btn">
+        Okay
+    </button>
+</div>
+
+
+    <footer class="section-p1">
+        <div class="col">
+            <img class="logo" src="" alt="">
+            <div class="follow">
+                <h4>Follow Us</h4>
+                <div class="icon">
+                    <i class="fa fa-facebook-official" aria-hidden="true"></i>
+                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                    <i class="fa fa-youtube" aria-hidden="true"></i>
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <h4>About</h4>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Cookie Policy</a>
+            <a href="#">Terms & Conditions</a>
+        </div>
+
+        <div class="copyright">
+            <p> ©Barrel Barrons Limited 2023</p>
+        </div>
+    </footer>
+
+    
+
+    <script src="script.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        <script type="text/javascript">
+            // Initialize Variables
+            var closePopup = document.getElementById("popupclose");
+            var overlay = document.getElementById("overlay");
+            var popup = document.getElementById("popup");
+         
+            // Close Popup Event
+            closePopup.onclick = function() {
+                overlay.style.display = 'none';
+                popup.style.display = 'none';
+            };
+            // Show Overlay and Popup
+	button.onclick = function() {
+	  overlay.style.display = 'block';
+	  popup.style.display = 'block';
+	}
+        </script>
+
+</body>
+</html>
